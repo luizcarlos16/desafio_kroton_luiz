@@ -108,7 +108,7 @@ resource "aws_security_group" "jvnSG" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-    ingress {
+  ingress {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
@@ -122,7 +122,7 @@ resource "aws_security_group" "jvnSG" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
-  
+
   tags = {
     Name = "jvnSG"
   }
@@ -144,16 +144,16 @@ resource "aws_instance" "desafio_kroton" {
 }
 
 resource "aws_ebs_volume" "ebs-volume-1" {
-	availability_zone = "us-east-1a"
-	size              = 10
-	type              = "gp2"
-	tags = {
-		Name = "volume para log nginx"
-	}
+  availability_zone = "us-east-1a"
+  size              = 10
+  type              = "gp2"
+  tags = {
+    Name = "volume para log nginx"
+  }
 }
 
 resource "aws_volume_attachment" "ebs-volume-1-attachment" {
-	device_name = "/dev/sdh"
-	volume_id   = aws_ebs_volume.ebs-volume-1.id
-	instance_id = aws_instance.desafio_kroton.id
+  device_name = "/dev/sdh"
+  volume_id   = aws_ebs_volume.ebs-volume-1.id
+  instance_id = aws_instance.desafio_kroton.id
 }
