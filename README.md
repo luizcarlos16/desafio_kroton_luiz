@@ -24,3 +24,13 @@ Tem 2 arquivos com mais detalhes em "doc"
 "DESAFIO KRONTON.pdf" - sobre o desafio 
 
 "GitHub Action TerraformCI.pdf" - sobre o GitHub Action com TerraformCI
+
+Vai ficar disponivel, até sexta-feira (23/07) até 18hrs.
+
+
+
+Acessar:  https://desafiokrt.jvntecnologia.com.br
+
+ou 
+
+http://3.216.28.168/
