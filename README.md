@@ -19,4 +19,6 @@ $ terraform plan -out=”tfplan.out”
 $ terraform apply "tfplan.out"
 ```
 
-Tem um arquivo com mais detalhes em "doc"
+Tem 2 arquivos com mais detalhes em "doc"
+"DESAFIO KRONTON.pdf" - sobre o desafio
+"GitHub Action TerraformCI.pdf" - sobre o GitHub Action com TerraformCI
