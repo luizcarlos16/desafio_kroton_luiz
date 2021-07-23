@@ -140,7 +140,7 @@ resource "aws_instance" "desafio_kroton" {
   associate_public_ip_address = "true"
   tags = {
     Name = "Desafio_Kroton"
-    }
+  }
 }
 
 resource "aws_ebs_volume" "ebs-volume-1" {
