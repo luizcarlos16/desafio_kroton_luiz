@@ -10,5 +10,5 @@ sleep 10
 sudo mkfs -t ext4 /dev/xvdh
 echo '/dev/xvdh /var/log/nginx/ ext4 defaults,nofail,noatime,nodiratime,barrier=0,data=writeback 0 2' | sudo tee -a /etc/fstab > /dev/null
 sudo mount -a
-sleep 10
+sleep 15
 sudo service nginx restart
